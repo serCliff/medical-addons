@@ -6,7 +6,6 @@ import pdb
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-
     birth_date = fields.Date('Date of Birth')
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string="Gender")
     civil_state = fields.Selection([('single', 'Single'), ('married', 'Married')], string="Civil State")
