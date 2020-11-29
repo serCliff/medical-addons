@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
+    <record id="group_physiotherapist_doctor" model="res.groups">
+        <field name="name">Physiotherapist</field>
+        <field name="category_id" ref="medical_fields.module_medical_mgmt"/>
+    </record>
+
     <record model="ir.rule" id="access_treatment_history">
         <field name="name">treatment.history.read</field>
         <field name="model_id" ref="model_treatment_history"/>
-        <field name="groups" eval="[(4, ref('medical_fields.group_medical_doctor'))]"/>
+        <field name="groups" eval="[(4, ref('group_physiotherapist_doctor'))]"/>
         <field name="perm_read" eval="True"/>
         <field name="perm_create" eval="True"/>
         <field name="perm_unlink" eval="True"/>

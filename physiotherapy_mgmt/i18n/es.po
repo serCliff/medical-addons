@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0-20190711\n"
+"Project-Id-Version: Odoo Server 11.0-20201120\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-07 19:06+0000\n"
-"PO-Revision-Date: 2019-10-07 19:06+0000\n"
+"POT-Creation-Date: 2020-11-29 18:14+0000\n"
+"PO-Revision-Date: 2020-11-29 18:14+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,9 +21,28 @@ msgid "(edit)"
 msgstr "(editar)"
 
 #. module: physiotherapy_mgmt
+#: selection:res.partner,sport_periodicity:0
+msgid "1 - 2 per week"
+msgstr "1 - 2 por semana"
+
+#. module: physiotherapy_mgmt
+#: selection:res.partner,sport_periodicity:0
+msgid "2 - 5 per week"
+msgstr "2 - 5 por semana"
+
+#. module: physiotherapy_mgmt
+#: selection:res.partner,sport_periodicity:0
+msgid "6 or more"
+msgstr "6 o más"
+
+#. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_abnormal_sensations
-#: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
 msgid "Abnormal Sensations"
+msgstr "Sensaciones anómalas"
+
+#. module: physiotherapy_mgmt
+#: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
+msgid "Abnormal sensations"
 msgstr "Sensaciones anómalas"
 
 #. module: physiotherapy_mgmt
@@ -72,6 +91,15 @@ msgstr "Info. Dirección"
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_aggravating
 msgid "Aggravating"
 msgstr "Factores Agravantes"
+
+#. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_allergies
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_allergies
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_allergies
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_allergies
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_allergies
+msgid "Allergies"
+msgstr "Alergias"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
@@ -175,7 +203,7 @@ msgstr "Químico/Inflamatorio (Texto)"
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_chemical_inflammatory
 msgid "Chemical/Inflammatory"
-msgstr "mico/Inflamatorio (Nocturno y rigidez)"
+msgstr "Químico/Inflamatorio (Nocturno y rigidez)"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
@@ -302,6 +330,15 @@ msgid "DORSAL"
 msgstr "DORSAL"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_birth_date
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_birth_date
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_birth_date
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_birth_date
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_birth_date
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+#. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_deep
 msgid "Deep"
 msgstr "Profundo"
@@ -328,6 +365,7 @@ msgid "Differentiation Test"
 msgstr "Test de diferenciación"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_familiar_history_display_name
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_sport_display_name
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_display_name
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_personal_history_display_name
@@ -341,11 +379,6 @@ msgstr "Nombre mostrado"
 #: model:ir.model.fields,help:physiotherapy_mgmt.field_partner_treatment_headache
 msgid "Dizziness, headache, painful trivial activity"
 msgstr "Mareos, dolor de cabeza, actividad trivial dolorosa"
-
-#. module: physiotherapy_mgmt
-#: model:res.groups,name:physiotherapy_mgmt.group_physiotherapy_doctor
-msgid "Doctor"
-msgstr "Doctor"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_dorsal
@@ -429,8 +462,21 @@ msgid "Environment"
 msgstr "Entorno"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_familiar_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_familiar_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_familiar_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_familiar_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_familiar_history_id
+msgid "Familiar history"
+msgstr "Antecedentes familiares"
+
+#. module: physiotherapy_mgmt
+#: selection:res.partner,gender:0
+msgid "Female"
+msgstr "Mujer"
+
+#. module: physiotherapy_mgmt
 #: model:ir.model,name:physiotherapy_mgmt.model_physiotherapy_fields
-#: model:ir.model,name:physiotherapy_mgmt.model_treatment_fields
 msgid "Fields related with partner to be used on physiotherapy"
 msgstr "Campos relaciones con el cliente utilizados en fisioterapia"
 
@@ -515,7 +561,10 @@ msgid "Hypothesis"
 msgstr "Hipótesis"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_familiar_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_sport_id
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_personal_history_id
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_id
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_id
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_id
@@ -658,6 +707,7 @@ msgid "LUMBAR"
 msgstr "LUMBAR"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_familiar_history___last_update
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_sport___last_update
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment___last_update
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_personal_history___last_update
@@ -668,6 +718,7 @@ msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_familiar_history_write_uid
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_sport_write_uid
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_write_uid
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_personal_history_write_uid
@@ -677,6 +728,7 @@ msgid "Last Updated by"
 msgstr "Última actualización de"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_familiar_history_write_date
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_sport_write_date
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_write_date
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_personal_history_write_date
@@ -778,9 +830,9 @@ msgid "Male"
 msgstr "Hombre"
 
 #. module: physiotherapy_mgmt
-#: model:res.groups,name:physiotherapy_mgmt.group_physiotherapy_manager
-msgid "Manager"
-msgstr "Responsable"
+#: selection:res.partner,civil_state:0
+msgid "Married"
+msgstr "Casado"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_lumbar_mckenzie_test_ids
@@ -1005,6 +1057,24 @@ msgid "Patients"
 msgstr "Pacientes"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_sport_periodicity
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_sport_periodicity
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_sport_periodicity
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_sport_periodicity
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_sport_periodicity
+msgid "Periodicity"
+msgstr "Periodicidad"
+
+#. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_personal_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_personal_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_personal_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_personal_history_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_personal_history_id
+msgid "Personal history"
+msgstr "Antecedentes personales"
+
+#. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 msgid "Phone:"
 msgstr "Teléfono:"
@@ -1016,13 +1086,11 @@ msgid "Physiological Passive"
 msgstr "Movimientos fisiológicos pasivos"
 
 #. module: physiotherapy_mgmt
-#: model:ir.ui.view,arch_db:physiotherapy_mgmt.res_partner_patient_data
-msgid "Physioterapy"
-msgstr "Fisioterapia"
+#: model:res.groups,name:physiotherapy_mgmt.group_physiotherapist_doctor
+msgid "Physiotherapist"
+msgstr "Fisioterapeuta"
 
 #. module: physiotherapy_mgmt
-#: model:ir.module.category,description:physiotherapy_mgmt.module_physiotherapy_mgmt
-#: model:ir.module.category,name:physiotherapy_mgmt.module_physiotherapy_mgmt
 #: model:ir.ui.menu,name:physiotherapy_mgmt.physiotherapy_menu_root
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.res_partner_gift_search_filters
 msgid "Physiotherapy"
@@ -1043,6 +1111,15 @@ msgstr "Posicional"
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_history_form
 msgid "Positive"
 msgstr "Positivo"
+
+#. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_sport_practice
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_sport_practice
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_sport_practice
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_sport_practice
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_sport_practice
+msgid "Practice Sports??"
+msgstr "Practica deporte??"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
@@ -1214,6 +1291,15 @@ msgid "Special test"
 msgstr "Test especial"
 
 #. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_sport_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_sport_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_sport_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_sport_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_sport_id
+msgid "Sport practice"
+msgstr "Practica deporte"
+
+#. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 msgid "State"
 msgstr "Estado"
@@ -1237,6 +1323,15 @@ msgstr "Calle 2..."
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 msgid "Street..."
 msgstr "Calle..."
+
+#. module: physiotherapy_mgmt
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_style_of_life
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_physiotherapy_fields_style_of_life
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_style_of_life
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_style_of_life
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_style_of_life
+msgid "Style of life"
+msgstr "Estilo de vida"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_superior
@@ -1267,6 +1362,7 @@ msgid "Template"
 msgstr "Plantilla"
 
 #. module: physiotherapy_mgmt
+#: code:addons/medical-addons/physiotherapy_mgmt/models/physiotherapy_fields.py:38
 #: code:addons/physiotherapy_mgmt/models/physiotherapy_fields.py:38
 #, python-format
 msgid "Template record can't be deleted!!"
@@ -1353,7 +1449,6 @@ msgstr "Sesiones de tratamiento"
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_treatment_ids
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_treatment_ids
 #: model:ir.ui.menu,name:physiotherapy_mgmt.partner_treatment_menu_crm
-#: model:ir.ui.view,arch_db:physiotherapy_mgmt.res_partner_patient_data
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_tree
@@ -1378,32 +1473,32 @@ msgstr "Tipo de dolor"
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type1_left
 msgid "Type1 Left"
-msgstr "Type1 Left"
+msgstr "Tipo 1 Izq"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type1_right
 msgid "Type1 Right"
-msgstr "Type1 Right"
+msgstr " Tipo 1 Der"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type2_left
 msgid "Type2 Left"
-msgstr "Type2 Left"
+msgstr " Tipo 2 Izq"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type2_right
 msgid "Type2 Right"
-msgstr "Type2 Right"
+msgstr " Tipo 2 Der"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type3_left
 msgid "Type3 Left"
-msgstr "Type3 Left"
+msgstr " Tipo 3 Izq"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type3_right
 msgid "Type3 Right"
-msgstr "Type3 Right"
+msgstr " Tipo 3 Der"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_history_form
@@ -1466,7 +1561,6 @@ msgid "e.g. Mr."
 msgstr "Por ejemplo, Mr."
 
 #. module: physiotherapy_mgmt
-#: model:ir.ui.view,arch_db:physiotherapy_mgmt.res_partner_patient_data
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_history_form
@@ -1476,7 +1570,7 @@ msgstr "Por ejemplo, Director de Ventas"
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 msgid "e.g. www.odoo.com"
-msgstr "Por ejemplo, www.audiomedical.es"
+msgstr "Por ejemplo, www.odoo.com"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
