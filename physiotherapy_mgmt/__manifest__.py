@@ -17,6 +17,7 @@
 
     'depends': [
         'sale',
+        'medical_fields',
     ],
 
     'data': [

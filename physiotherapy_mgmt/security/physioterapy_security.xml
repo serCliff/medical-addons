@@ -4,7 +4,7 @@
     <record model="ir.rule" id="access_treatment_history">
         <field name="name">treatment.history.read</field>
         <field name="model_id" ref="model_treatment_history"/>
-        <field name="groups" eval="[(4, ref('medical_fields.group_physiotherapy_doctor'))]"/>
+        <field name="groups" eval="[(4, ref('medical_fields.group_medical_doctor'))]"/>
         <field name="perm_read" eval="True"/>
         <field name="perm_create" eval="True"/>
         <field name="perm_unlink" eval="True"/>
