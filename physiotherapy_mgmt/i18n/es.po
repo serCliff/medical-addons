@@ -1100,7 +1100,7 @@ msgstr "Fisioterapia"
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_physiotherapy_partner
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_physiotherapy_partner
 msgid "Physiotherapy Partner"
-msgstr "Contacto Fisioterapia"
+msgstr "Fisioterapia"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_positional

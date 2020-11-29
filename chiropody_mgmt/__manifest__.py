@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Podiatry Management",
+    'name': "Chiropody Management",
 
     'summary': """
-        Medical Clinic of Podiatry Management
+        Medical Clinic of chiropody Management
         """,
 
     'author': "Sergio Del Castillo",
@@ -13,18 +13,18 @@
     "contributors": [
         "Sergio Del Castillo <serdelcas1990@gmail.com>",
     ],
-    'version': '0.1',
+    'version': '2.0',
 
     'depends': [
         'sale',
+        'medical_fields',
     ],
 
     'data': [
-        # 'data/treatment_data.xml',
-        # 'security/physioterapy_security.xml',
+        'security/chiropody_security.xml',
         # # 'security/ir.model.access.csv',
         # 'views/physiotherapy_view.xml',
-        # 'views/res_partner.xml',
+        'views/res_partner.xml',
         # 'views/treatment_history.xml',
         # 'views/partner_treatment.xml',
     ],

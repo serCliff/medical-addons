@@ -3,7 +3,7 @@
 
     <menuitem id="physiotherapy_menu_root"
               name="Physiotherapy"
-              groups="physiotherapy_mgmt.group_physiotherapy_doctor"
+              groups="physiotherapy_mgmt.group_physiotherapist_doctor"
               web_icon="physiotherapy_mgmt,static/description/estetoscopio2.png"
               sequence="14"/>
 
@@ -16,7 +16,7 @@
     <menuitem id="physiotherapy_config"
               name="Configuration"
               parent="physiotherapy_menu_root"
-              groups="physiotherapy_mgmt.group_physiotherapy_manager"
+              groups="medical_fields.group_medical_manager"
               sequence="18"/>
 
 <!--    <menuitem id="events_config_events"-->

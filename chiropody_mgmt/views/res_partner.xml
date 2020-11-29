@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+
+<!--    FORM PARTNER-->
+        <record model="ir.ui.view" id="res_partner_patient_data_podiastry">
+            <field name="name">res.partner.patient.data.pod</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="medical_fields.res_partner_patient_data"/>
+            <field name="arch" type="xml">
+
+              <!--Podiastry Data-->
+              <xpath expr="//group[@name='consultations']" position="inside">
+                    <field name="chiropody_partner"/>
+              </xpath>
+
+              <xpath expr="//field[@name='weight']" position="after">
+                    <field name="foot_size"/>
+                    <field name="foot_type"/>
+              </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
