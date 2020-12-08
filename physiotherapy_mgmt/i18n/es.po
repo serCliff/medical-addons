@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0-20201120\n"
+"Project-Id-Version: Odoo Server 11.0-20191105\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-29 18:14+0000\n"
-"PO-Revision-Date: 2020-11-29 18:14+0000\n"
+"POT-Creation-Date: 2020-12-08 14:44+0000\n"
+"PO-Revision-Date: 2020-12-08 14:44+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -203,7 +203,7 @@ msgstr "Químico/Inflamatorio (Texto)"
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_chemical_inflammatory
 msgid "Chemical/Inflammatory"
-msgstr "Químico/Inflamatorio (Nocturno y rigidez)"
+msgstr "mico/Inflamatorio (Nocturno y rigidez)"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
@@ -924,9 +924,7 @@ msgstr "Músculo"
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_familiar_history_name
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_sport_name
-#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_name
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_personal_history_name
-#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_name
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_name
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_patient_form
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_form
@@ -1092,7 +1090,7 @@ msgstr "Fisioterapeuta"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.menu,name:physiotherapy_mgmt.physiotherapy_menu_root
-#: model:ir.ui.view,arch_db:physiotherapy_mgmt.res_partner_gift_search_filters
+#: model:ir.ui.view,arch_db:physiotherapy_mgmt.res_partner_physioterapy_search_filters
 msgid "Physiotherapy"
 msgstr "Fisioterapia"
 
@@ -1100,7 +1098,7 @@ msgstr "Fisioterapia"
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_partner_physiotherapy_partner
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_physiotherapy_partner
 msgid "Physiotherapy Partner"
-msgstr "Fisioterapia"
+msgstr "Contacto Fisioterapia"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_positional
@@ -1217,6 +1215,7 @@ msgstr "Secuencia"
 #. module: physiotherapy_mgmt
 #: model:ir.actions.act_window,name:physiotherapy_mgmt.action_treatment_history_form
 #: model:ir.ui.menu,name:physiotherapy_mgmt.partner_treatment_history_menu_crm
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_name
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_history_filter
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_history_form
 msgid "Session"
@@ -1331,7 +1330,7 @@ msgstr "Calle..."
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_res_users_style_of_life
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_style_of_life
 msgid "Style of life"
-msgstr "Estilo de vida"
+msgstr "Stilo de vida"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_superior
@@ -1362,7 +1361,6 @@ msgid "Template"
 msgstr "Plantilla"
 
 #. module: physiotherapy_mgmt
-#: code:addons/medical-addons/physiotherapy_mgmt/models/physiotherapy_fields.py:38
 #: code:addons/physiotherapy_mgmt/models/physiotherapy_fields.py:38
 #, python-format
 msgid "Template record can't be deleted!!"
@@ -1427,6 +1425,7 @@ msgstr "Costotransversal Derecha"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_history_treatment_id
+#: model:ir.model.fields,field_description:physiotherapy_mgmt.field_partner_treatment_name
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_filter
 msgid "Treatment"
 msgstr "Tratamiento"
@@ -1473,32 +1472,32 @@ msgstr "Tipo de dolor"
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type1_left
 msgid "Type1 Left"
-msgstr "Tipo 1 Izq"
+msgstr "Type1 Left"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type1_right
 msgid "Type1 Right"
-msgstr " Tipo 1 Der"
+msgstr "Type1 Right"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type2_left
 msgid "Type2 Left"
-msgstr " Tipo 2 Izq"
+msgstr "Type2 Left"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type2_right
 msgid "Type2 Right"
-msgstr " Tipo 2 Der"
+msgstr "Type2 Right"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type3_left
 msgid "Type3 Left"
-msgstr " Tipo 3 Izq"
+msgstr "Type3 Left"
 
 #. module: physiotherapy_mgmt
 #: model:ir.model.fields,field_description:physiotherapy_mgmt.field_treatment_movements_type3_right
 msgid "Type3 Right"
-msgstr " Tipo 3 Der"
+msgstr "Type3 Right"
 
 #. module: physiotherapy_mgmt
 #: model:ir.ui.view,arch_db:physiotherapy_mgmt.view_treatment_history_form
