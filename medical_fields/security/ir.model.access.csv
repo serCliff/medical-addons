@@ -1,8 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_treatment_history,treatment_history,medical_fields.model_treatment_history,group_medical_doctor,1,1,1,1
-access_partner_sport,partner_sport,medical_fields.model_partner_sport,group_medical_doctor,1,0,0,0
-access_partner_sport_manager,partner_sport_manager,medical_fields.model_partner_sport,group_medical_manager,1,1,1,1
-access_familiar_history,familiar_history,medical_fields.model_familiar_history,group_medical_doctor,1,0,0,0
-access_familiar_history_manager,familiar_history_manager,medical_fields.model_familiar_history,group_medical_manager,1,1,1,1
-access_personal_history,personal_history,medical_fields.model_personal_history,group_medical_doctor,1,0,0,0
-access_personal_history_manager,personal_history_manager,medical_fields.model_personal_history,group_medical_manager,1,1,1,1
+perm_access_partner_sport_manager,partner.sport.manager,model_partner_sport,group_medical_manager,1,1,1,1
+perm_access_partner_sport,partner.sport,model_partner_sport,group_medical_doctor,1,1,1,0
+perm_access_familiar_history,familiar.history,model_familiar_history,group_medical_doctor,1,1,1,0
+perm_access_familiar_history_manager,familiar.history.manager,model_familiar_history,group_medical_manager,1,1,1,1
+perm_access_personal_history,personal.history,model_personal_history,group_medical_doctor,1,1,1,0
+perm_access_personal_history_manager,personal.history.manager,model_personal_history,group_medical_manager,1,1,1,1

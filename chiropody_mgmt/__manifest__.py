@@ -22,6 +22,7 @@
     ],
 
     'data': [
+        'security/ir.model.access.csv',
         'security/chiropody_security.xml',
         'views/chiropody_menu.xml',
         'views/res_partner.xml',

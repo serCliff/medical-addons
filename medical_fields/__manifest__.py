@@ -20,8 +20,8 @@
     ],
 
     'data': [
+        'security/ir.model.access.csv',
         'security/medical_security.xml',
-        # # 'security/ir.model.access.csv',
         'views/res_partner.xml',
     ],
 

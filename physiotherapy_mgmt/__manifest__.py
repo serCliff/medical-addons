@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Physioterapy Management",
+    'name': "Physiotherapy Management",
 
     'summary': """
-        Medical Clinic of Physioterapy Management
+        Medical Clinic of Physiotherapy Management
         """,
 
     'author': "Sergio Del Castillo",
@@ -21,9 +21,9 @@
     ],
 
     'data': [
+        'security/ir.model.access.csv',
         'data/treatment_data.xml',
         'security/physioterapy_security.xml',
-        # 'security/ir.model.access.csv',
         'views/physiotherapy_view.xml',
         'views/res_partner.xml',
         'views/treatment_history.xml',
