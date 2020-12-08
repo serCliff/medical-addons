@@ -40,6 +40,9 @@ class PartnerRelatedFields(models.AbstractModel):
 
     @api.multi
     def _default_values(self, var):
+        """
+        Fill the values of new records with the template values
+        """
         # item = self.env.ref('physiotherapy_mgmt.template_{0}'.format(self._table))
         # item = self.env
         item = self.env[self._name].search([('active', '=', False)], limit=1)

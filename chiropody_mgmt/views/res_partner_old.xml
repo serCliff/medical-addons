@@ -9,8 +9,8 @@
             <field name="arch" type="xml">
 
               <!--Physiotherapy Data-->
-              <xpath expr="//group[@name='consultations']" position="inside">
-                    <field name="physiotherapy_partner"/>
+              <xpath expr="//field[@name='birth_date']" position="before">
+                    <field name="physiotherapy_partner" invisible="1"/>
               </xpath>
             </field>
         </record>
@@ -55,9 +55,6 @@
                         </div>
                     </div>
 
-                    <group name="reason">
-                        <field name="reason_for_consultation"/>
-                    </group>
                     <group>
                         <group name="general">
                             <field name="physiotherapy_partner" invisible="1"/>
@@ -72,7 +69,7 @@
                             <field name="style_of_life"/>
                         </group>
                         <group name="sports">
-                            <field name="sport_practice"/>
+                            <field name="sport_practice" widget="boolean_toggle" class="oe_edit_only"/>
                             <field name="sport_id" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
                             <field name="sport_periodicity" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
                         </group>
@@ -258,7 +255,7 @@
 
 
 <!--        SEARCH FILTERS-->
-        <record model="ir.ui.view" id="res_partner_physioterapy_search_filters">
+        <record model="ir.ui.view" id="res_partner_gift_search_filters">
             <field name="name">res.partner.filters</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_res_partner_filter"/>

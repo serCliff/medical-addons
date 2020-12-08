@@ -9,16 +9,32 @@
             <field name="groups_id" eval="[(4, ref('medical_fields.group_medical_doctor'))]"/>
             <field name="arch" type="xml">
 
+                <!-- <group position="after">
+                    <group name="medical_reason">
+                        <group name="reason">
+                            <field name="reason_for_consultation"/>
+                        </group>
+                        <group name="consultations">
+                        </group>
+                    </group>
+                </group> -->
+
               <!--Physiotherapy Data-->
                 <notebook position="inside">
                     <page name="medical" string="Medical">
+                        <group name="medical_reason">
+                            <group name="reason">
+                                <field name="reason_for_consultation"/>
+                            </group>
+                            <group name="consultations">
+                            </group>
+                        </group>
                         <group>
                             <group name="general">
                                 <!-- <field name="physiotherapy_partner" invisible="1"/> -->
                                 <field name="birth_date"/>
                                 <field name="gender"/>
                                 <field name="civil_state"/>
-                                <field name="allergies"/>
                             </group>
                             <group name="work_info">
                                 <field name="function" placeholder="e.g. Sales Director"
@@ -26,11 +42,15 @@
                                 <field name="style_of_life"/>
                             </group>
                             <group name="sports">
+                                <field name="height"/>
+                                <field name="weight"/>
                                 <field name="sport_practice" widget="boolean_toggle" class="oe_edit_only"/>
                                 <field name="sport_id" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
                                 <field name="sport_periodicity" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
                             </group>
                             <group name="history">
+                                <field name="allergies"/>
+                                <field name="current_medication"/>
                                 <field name="personal_history_id" widget="many2many_tags"/>
                                 <field name="familiar_history_id" widget="many2many_tags"/>
                             </group>

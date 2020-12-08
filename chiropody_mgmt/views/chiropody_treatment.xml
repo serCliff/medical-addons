@@ -1,0 +1,154 @@
+<odoo>
+    <data>
+
+<!--        FROM-->
+        <record model="ir.ui.view" id="view_treatment_form">
+            <field name="name">chiropody.treatment.form</field>
+            <field name="model">chiropody.treatment</field>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <form string="Treatments">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box" attrs="{'invisible': [('active', '=', False)]}">
+                            <button class="oe_stat_button" type="object" name="action_make_chiropody_session"
+                                icon="fa-user-md">
+                                <field string="Sessions" name="chiropody_sessions_count" widget="statinfo"/>
+                            </button>
+                            <field name="active" invisible="1"/>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" default_focus="1" placeholder="Name" attrs="{'readonly': [('active', '=', False)]}"/>
+                            </h1>
+                            <div class="o_row" attrs="{'invisible': [('active', '=', False)]}">
+                                <field name="partner_id"/>
+                                <field name="create_date" readonly="True"/>
+                            </div>
+                        </div>
+
+                        <group attrs="{'invisible': [('active', '=', False)]}">
+                            <group name="general">
+                                <field name="birth_date"/>
+                                <field name="gender"/>
+                                <field name="civil_state"/>
+                            </group>
+                            <group name="work_info">
+                                <field name="function" placeholder="e.g. Sales Director"/>
+                                <field name="style_of_life"/>
+                            </group>
+                            <group name="sports">
+                                <field name="height"/>
+                                <field name="weight"/>
+                                <field name="foot_size"/>
+                                <field name="foot_type"/>
+                                <field name="sport_practice" widget="boolean_toggle" class="oe_edit_only"/>
+                                <field name="sport_id" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
+                                <field name="sport_periodicity" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
+                            </group>
+                            <group name="history">
+                                <field name="allergies"/>
+                                <field name="current_medication"/>
+                                <field name="personal_history_id" widget="many2many_tags"/>
+                                <field name="familiar_history_id" widget="many2many_tags"/>
+                            </group>
+                        </group>
+
+                        <!-- PARTICULAR DATA -->
+                        <separator/>
+                        <label for="observations" attrs="{'invisible': [('active', '=', False)]}"/>
+                        <field name="observations" attrs="{'invisible': [('active', '=', False)]}"/>
+                        <notebook attrs="{'invisible': [('active', '=', False)]}">
+                            <page name='treatment_history' string="Sessions">
+                                <field name="chiropody_session_ids" context="{'default_treatment_id': active_id, 'default_partner_id': partner_id}"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+<!--        TREE-->
+        <record id="view_treatment_tree" model="ir.ui.view">
+            <field name="name">chiropody.treatment.tree</field>
+            <field name="model">chiropody.treatment</field>
+            <field name="arch" type="xml">
+                <tree string="Treatments">
+                    <field name="create_date"/>
+                    <field name="partner_id"/>
+                    <field name="name"/>
+                    <field name="observations"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+<!--        SEARCH FILTERS-->
+        <record id="view_treatment_filter" model="ir.ui.view">
+            <field name="name">chiropody.treatment.search</field>
+            <field name="model">chiropody.treatment</field>
+            <field name="arch" type="xml">
+                <search string="Treatment">
+                    <field name="name" string="Treatment" filter_domain="[('name','ilike',self)]"/>
+                    <field name="partner_id" />
+                    <group expand="0" string="Group By">
+                        <filter name="group_partner_id" string="Partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter name="group_create_date" string="Create Date" domain="[]" context="{'group_by':'create_date'}"/>
+                    </group>
+                </search>
+             </field>
+         </record>
+<!-- 
+        <record model="ir.ui.view" id="view_treatment_filter_manager">
+            <field name="name">chiropody.treatment.search.manager</field>
+            <field name="model">chiropody.treatment</field>
+            <field name="inherit_id" ref="chiropody_mgmt.view_treatment_filter"/>
+            <field name="groups_id" eval="[(4, ref('medical_fields.group_medical_manager'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <filter name="template" string="Template" domain="[('active', '=', False)]"/>
+                </xpath>
+            </field>
+        </record> -->
+
+
+<!--        ACTIONS-->
+        <record id="action_treatment_form" model="ir.actions.act_window">
+            <field name="name">Treatments</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">chiropody.treatment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_treatment_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a treatment for a partner.
+              </p>
+            </field>
+        </record>
+
+
+        <record id="action_treatment_form_view" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_treatment_form"/>
+            <field name="act_window_id" ref="action_treatment_form"/>
+        </record>
+        <record id="action_partner_tree_view" model="ir.actions.act_window.view">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_treatment_tree"/>
+            <field name="act_window_id" ref="action_treatment_form"/>
+        </record>
+
+
+<!--        MENUITEM-->
+        <menuitem id="partner_chiropody_treatment_menu_crm"
+            parent="chiropody_mgmt.chiropody_menu_root"
+            action="chiropody_mgmt.action_treatment_form"
+            sequence="2"/>
+
+
+
+    </data>
+</odoo>

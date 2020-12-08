@@ -20,3 +20,8 @@ class ResPartner(models.Model):
                                            'personal_history_id', string="Personal history")
     familiar_history_id = fields.Many2many("familiar.history",  'familiar_history_rel', 'partner_id',
                                            'familiar_history_id', string="Familiar history")
+    weight = fields.Float("Weight (Kg)")
+    height = fields.Float("Height (m)")
+    current_medication = fields.Char("Current medication")
+    reason_for_consultation = fields.Char("Reason for consultation")
+

@@ -1,0 +1,494 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* chiropody_mgmt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20201120\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-08 13:58+0000\n"
+"PO-Revision-Date: 2020-12-08 13:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "(edit)"
+msgstr "(editar)"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_active
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_active
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Address"
+msgstr "Dirección"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Address info"
+msgstr "Info. Dirección"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_allergies
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_allergies
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_allergies
+msgid "Allergies"
+msgstr "Alergias"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_partner_chiro_treatment_count
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_users_chiro_treatment_count
+msgid "Chiro Treatment Count"
+msgstr "Total tratamientos"
+
+#. module: chiropody_mgmt
+#: model:res.groups,name:chiropody_mgmt.group_chiropodist_doctor
+msgid "Chiropodist"
+msgstr "Podólogo"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.menu,name:chiropody_mgmt.chiropody_menu_root
+#: model:ir.ui.view,arch_db:chiropody_mgmt.res_partner_chiropody_search_filters
+msgid "Chiropody"
+msgstr "Podología"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_chiropody_sessions_count
+msgid "Chiropody Sessions Count"
+msgstr "Total sesiones"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_partner_chiro_treatment_ids
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_users_chiro_treatment_ids
+msgid "Chiropody treatments"
+msgstr "Tratamientos"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "City"
+msgstr "Ciudad"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_civil_state
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_civil_state
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_civil_state
+msgid "Civil State"
+msgstr "Estado civil"
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,help:chiropody_mgmt.action_chiropody_patient_form
+msgid "Click to add a contact in your address book."
+msgstr "Pulse aquí para agregar un contacto en su directorio."
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,help:chiropody_mgmt.action_treatment_form
+msgid "Click to add a treatment for a partner."
+msgstr "Pulse aquí para agregar un tratamiento para un cliente."
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,help:chiropody_mgmt.action_chiropody_session_form
+msgid "Click to add a treatment history for a partner."
+msgstr "Pulse aquí para agregar una historia de tratamiento para un cliente."
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_company_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_company_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_company_id
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Company"
+msgstr "Compañía"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.menu,name:chiropody_mgmt.chiropody_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: chiropody_mgmt
+#: model:ir.model,name:chiropody_mgmt.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Contact / Address"
+msgstr "Contacto/dirección"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Contact Name"
+msgstr "Nombre del contacto"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Contacts & Addresses"
+msgstr "Contactos y direcciones"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Country"
+msgstr "País"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_create_date
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_create_date
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_create_date
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_filter
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_filter
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Create company"
+msgstr "Crear compañía"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_create_uid
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_current_medication
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_current_medication
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_current_medication
+msgid "Current medication"
+msgstr "Medicación actual"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_birth_date
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_birth_date
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_birth_date
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_display_name
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_display_name
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,help:chiropody_mgmt.field_chiropody_session_observations
+#: model:ir.model.fields,help:chiropody_mgmt.field_chiropody_treatment_observations
+msgid "Duration? Origins? Influences?"
+msgstr "¿Tiempo de duración? ¿Cuál cree que es el origen? ¿Qué influencia tiene en sus ADV?"
+
+#. module: chiropody_mgmt
+#: model:ir.model,name:chiropody_mgmt.model_chiropody_session
+msgid "Each of sessions of a treatment"
+msgstr "Cada una de las sesiones de un tratamiento"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_familiar_history_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_familiar_history_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_familiar_history_id
+msgid "Familiar history"
+msgstr "Antecedentes familiares"
+
+#. module: chiropody_mgmt
+#: model:ir.model,name:chiropody_mgmt.model_chiropody_fields
+msgid "Fields related with partner to be used on chiropody"
+msgstr "Fields related with partner to be used on chiropody"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_foot_size
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_foot_size
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_foot_size
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_partner_foot_size
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_users_foot_size
+msgid "Foot size"
+msgstr "Talla pie"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_foot_type
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_foot_type
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_foot_type
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_partner_foot_type
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_users_foot_type
+msgid "Foot type"
+msgstr "Tipo de pie"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_gender
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_gender
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_gender
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_filter
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_filter
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_height
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_height
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_height
+msgid "Height (m)"
+msgstr "Altura (m)"
+
+#. module: chiropody_mgmt
+#: model:ir.model,name:chiropody_mgmt.model_chiropody_treatment
+msgid "Historical of some illness treatment. A treatment have some treatment.sessions"
+msgstr "Histórico de sesiones acerca de un tratamiento. Los tratamientos están compuestos por sesiones."
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_id
+msgid "ID"
+msgstr "ID"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Internal Notes"
+msgstr "Notas internas"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Internal note..."
+msgstr "Nota Interna..."
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_function
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_function
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_function
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields___last_update
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session___last_update
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_write_uid
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_write_date
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Misc"
+msgstr "Varios"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Mobile:"
+msgstr "Móvil:"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_form
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_observations
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_observations
+msgid "Observations"
+msgstr "Observaciones"
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,help:chiropody_mgmt.action_chiropody_patient_form
+msgid "Odoo helps you easily track all activities related to\n"
+"                a customer: discussions, history of business opportunities,\n"
+"                documents, etc."
+msgstr "Odoo le ayuda a rastrear fácilmente toda la actividad relacionada a\n"
+"un cliente: discusiones, historia de las oportunidades de negocio,\n"
+"documentos, etc."
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_partner_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_partner_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_partner_id
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_filter
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_filter
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,name:chiropody_mgmt.action_chiropody_patient_form
+#: model:ir.ui.menu,name:chiropody_mgmt.res_chiropody_patient_menu_crm
+msgid "Patients"
+msgstr "Pacientes"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_sport_periodicity
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_sport_periodicity
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_sport_periodicity
+msgid "Periodicity"
+msgstr "Periodicidad"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_personal_history_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_personal_history_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_personal_history_id
+msgid "Personal history"
+msgstr "Antecedentes personales"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_partner_chiropody_partner
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_res_users_chiropody_partner
+msgid "Podiastry Partner"
+msgstr "Podiastry Partner"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_sport_practice
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_sport_practice
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_sport_practice
+msgid "Practice Sports??"
+msgstr "Practica deporte??"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Sale"
+msgstr "Venta"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Sales & Purchases"
+msgstr "Ventas y Compras"
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,name:chiropody_mgmt.action_chiropody_session_form
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_name
+#: model:ir.ui.menu,name:chiropody_mgmt.partner_chiropody_session_menu_crm
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_filter
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_form
+msgid "Session"
+msgstr "Sesión"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_chiropody_session_ids
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_filter
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_tree
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_form
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_sport_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_sport_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_sport_id
+msgid "Sport practice"
+msgstr "Practica deporte"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "State"
+msgstr "Estado"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_style_of_life
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_style_of_life
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_style_of_life
+msgid "Style of life"
+msgstr "Stilo de vida"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "Tags..."
+msgstr "Etiquetas..."
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_treatment_id
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_name
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_filter
+msgid "Treatment"
+msgstr "Tratamiento"
+
+#. module: chiropody_mgmt
+#: model:ir.actions.act_window,name:chiropody_mgmt.action_treatment_form
+#: model:ir.ui.menu,name:chiropody_mgmt.partner_chiropody_treatment_menu_crm
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_form
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_tree
+msgid "Treatments"
+msgstr "Tratamientos"
+
+#. module: chiropody_mgmt
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_fields_weight
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_session_weight
+#: model:ir.model.fields,field_description:chiropody_mgmt.field_chiropody_treatment_weight
+msgid "Weight (Kg)"
+msgstr "Peso (Kg)"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "ZIP"
+msgstr "C.P."
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "e.g. BE0477472701"
+msgstr "Por ejemplo, ESA00000000"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "e.g. Mr."
+msgstr "Por ejemplo, Mr."
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_session_form
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_treatment_form
+msgid "e.g. Sales Director"
+msgstr "Por ejemplo, Director de Ventas"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "e.g. www.odoo.com"
+msgstr "Por ejemplo, www.odoo.com"
+
+#. module: chiropody_mgmt
+#: model:ir.ui.view,arch_db:chiropody_mgmt.view_chiropody_form
+msgid "internal note..."
+msgstr "Nota interna..."
+

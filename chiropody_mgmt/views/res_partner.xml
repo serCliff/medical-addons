@@ -2,23 +2,29 @@
     <data>
 
 <!--    FORM PARTNER-->
-        <record model="ir.ui.view" id="res_partner_patient_data_physioterapy">
-            <field name="name">res.partner.patient.data.phy</field>
+        <record model="ir.ui.view" id="res_partner_patient_data_chiropody">
+            <field name="name">res.partner.patient.data.chiropody</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="medical_fields.res_partner_patient_data"/>
             <field name="arch" type="xml">
 
-              <!--Physiotherapy Data-->
+              <!--Chiropody Data-->
               <xpath expr="//group[@name='consultations']" position="inside">
-                    <field name="physiotherapy_partner"/>
+                    <field name="chiropody_partner"/>
+              </xpath>
+
+              <xpath expr="//field[@name='weight']" position="after">
+                    <field name="foot_size"/>
+                    <field name="foot_type"/>
               </xpath>
             </field>
         </record>
 
 
+
 <!--        FORM PATIENTS-->
-        <record model="ir.ui.view" id="view_patient_form">
-            <field name="name">res.partner.form.patient</field>
+        <record model="ir.ui.view" id="view_chiropody_form">
+            <field name="name">res.partner.form.chiropody.patient</field>
             <field name="model">res.partner</field>
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
@@ -30,9 +36,9 @@
                             <field name="active" widget="boolean_button"
                                 options='{"terminology": "archive"}'/>
                         </button>
-                        <button class="oe_stat_button" type="object" name="action_make_treatment"
-                            icon="fa-stethoscope">
-                            <field string="Treatments" name="treatment_count" widget="statinfo"/>
+                        <button class="oe_stat_button" type="object" name="action_make_chiropody_treatment"
+                            icon="fa-user-md">
+                            <field string="Treatments" name="chiro_treatment_count" widget="statinfo"/>
                         </button>
                     </div>
                     <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 90]}'/>
@@ -59,29 +65,33 @@
                         <field name="reason_for_consultation"/>
                     </group>
                     <group>
-                        <group name="general">
-                            <field name="physiotherapy_partner" invisible="1"/>
-                            <field name="birth_date"/>
-                            <field name="gender"/>
-                            <field name="civil_state"/>
-                            <field name="allergies"/>
+                            <group name="general">
+                                <field name="chiropody_partner" invisible="1"/>
+                                <field name="birth_date"/>
+                                <field name="gender"/>
+                                <field name="civil_state"/>
+                            </group>
+                            <group name="work_info">
+                                <field name="function" placeholder="e.g. Sales Director"
+                                    attrs="{'invisible': [('is_company','=', True)]}"/>
+                                <field name="style_of_life"/>
+                            </group>
+                            <group name="sports">
+                                <field name="height"/>
+                                <field name="weight"/>
+                                <field name="foot_size"/>
+                                <field name="foot_type"/>
+                                <field name="sport_practice" widget="boolean_toggle" class="oe_edit_only"/>
+                                <field name="sport_id" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
+                                <field name="sport_periodicity" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
+                            </group>
+                            <group name="history">
+                                <field name="allergies"/>
+                                <field name="current_medication"/>
+                                <field name="personal_history_id" widget="many2many_tags"/>
+                                <field name="familiar_history_id" widget="many2many_tags"/>
+                            </group>
                         </group>
-                        <group name="work_info">
-                            <field name="function" placeholder="e.g. Sales Director"
-                                attrs="{'invisible': [('is_company','=', True)]}"/>
-                            <field name="style_of_life"/>
-                        </group>
-                        <group name="sports">
-                            <field name="sport_practice"/>
-                            <field name="sport_id" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
-                            <field name="sport_periodicity" attrs="{'invisible': [('sport_practice', '=', False)]}"/>
-                        </group>
-                        <group name="history">
-                            <field name="personal_history_id" widget="many2many_tags"/>
-                            <field name="familiar_history_id" widget="many2many_tags"/>
-                        </group>
-
-                    </group>
 
                     <notebook colspan="4">
                         <page name='internal_notes' string="Internal Notes" autofocus="autofocus">
@@ -231,7 +241,7 @@
                             </field>
                         </page>
                         <page name="treatments" string="Treatments">
-                            <field name="treatment_ids" context="{'default_partner_id': active_id}"/>
+                            <field name="chiro_treatment_ids" context="{'default_partner_id': active_id}"/>
                         </page>
                         <page name='sales_purchases' string="Sales &amp; Purchases"  invisible="1">
                             <group name="container_row_2">
@@ -258,7 +268,7 @@
 
 
 <!--        SEARCH FILTERS-->
-        <record model="ir.ui.view" id="res_partner_physioterapy_search_filters">
+        <record model="ir.ui.view" id="res_partner_chiropody_search_filters">
             <field name="name">res.partner.filters</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_res_partner_filter"/>
@@ -266,7 +276,7 @@
 
                 <!-- Physiotherapy partners-->
                 <separator position="after">
-                    <filter name="physiotherapy" help="Physiotherapy" domain="[('physiotherapy_partner','=',True)]"/>
+                    <filter name="chiropody" help="Chiropody" domain="[('chiropody_partner','=',True)]"/>
                     <separator/>
                 </separator>
 
@@ -276,13 +286,13 @@
 
 
 <!--        ACTIONS-->
-        <record id="action_patient_form" model="ir.actions.act_window">
+        <record id="action_chiropody_patient_form" model="ir.actions.act_window">
             <field name="name">Patients</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">res.partner</field>
             <field name="view_type">form</field>
             <field name="view_mode">kanban,tree,form</field>
-            <field name="context">{"search_default_physiotherapy":1}</field>
+            <field name="context">{"search_default_chiropody":1}</field>
             <field name="search_view_id" ref="base.view_res_partner_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
@@ -299,44 +309,31 @@
             <field eval="0" name="sequence"/>
             <field name="view_mode">kanban</field>
             <field name="view_id" ref="base.res_partner_kanban_view"/>
-            <field name="act_window_id" ref="action_patient_form"/>
+            <field name="act_window_id" ref="action_chiropody_patient_form"/>
         </record>
-        <record id="action_patient_form_view" model="ir.actions.act_window.view">
+        <record id="action_chiropody_patient_form_view" model="ir.actions.act_window.view">
             <field eval="2" name="sequence"/>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_patient_form"/>
-            <field name="act_window_id" ref="action_patient_form"/>
+            <field name="view_id" ref="view_chiropody_form"/>
+            <field name="act_window_id" ref="action_chiropody_patient_form"/>
         </record>
         <record id="action_partner_tree_view1" model="ir.actions.act_window.view">
             <field name="sequence" eval="1"/>
             <field name="view_mode">tree</field>
             <field name="view_id" ref="base.view_partner_tree"/>
-            <field name="act_window_id" ref="action_patient_form"/>
+            <field name="act_window_id" ref="action_chiropody_patient_form"/>
         </record>
 
 
 
 <!--        MENUITEM-->
-        <menuitem id="res_patient_menu_crm"
-            parent="physiotherapy_mgmt.physiotherapy_menu_root"
-            action="physiotherapy_mgmt.action_patient_form"
+        <menuitem id="res_chiropody_patient_menu_crm"
+            parent="chiropody_mgmt.chiropody_menu_root"
+            action="chiropody_mgmt.action_chiropody_patient_form"
             sequence="2"/>
+
 
 
 
     </data>
 </odoo>
-
-
-        <!--PERMISOS COMERCIAL    -->
-<!--        <record model="ir.ui.view" id="res_partner_referral_commercial_permissions">-->
-<!--            <field name="name">res.partner.permissions</field>-->
-<!--            <field name="model">res.partner</field>-->
-<!--            <field name="inherit_id" ref="res_partner_referral_gifts"/>-->
-<!--            <field name="groups_id" eval="[(4, ref('am_personalizations.group_commercial'))]"/>-->
-<!--            <field name="arch" type="xml">-->
-<!--                <field name="product_ids" position="attributes">-->
-<!--                    <attribute name="domain">[('uds', '>', 0)]</attribute>-->
-<!--                </field>-->
-<!--            </field>-->
-<!--        </record>-->

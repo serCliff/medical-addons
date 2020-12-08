@@ -9,7 +9,7 @@ class ResPartner(models.Model):
     treatment_ids = fields.One2many('partner.treatment', 'partner_id', "Treatments")
     treatment_count = fields.Integer(compute='count_treatments')
     treatment_history_ids = fields.One2many('treatment.history', 'partner_id', "Treatment Histories")
-    physiotherapy_partner = fields.Boolean("Physiotherapy Partner")
+    physiotherapy_partner = fields.Boolean("Physiotherapy Partner", track_visibility='onchange')
 
     @api.model
     def create(self, values):
