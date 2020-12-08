@@ -258,7 +258,7 @@
 
 
 <!--        SEARCH FILTERS-->
-        <record model="ir.ui.view" id="res_partner_gift_search_filters">
+        <record model="ir.ui.view" id="res_partner_physioterapy_search_filters">
             <field name="name">res.partner.filters</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_res_partner_filter"/>

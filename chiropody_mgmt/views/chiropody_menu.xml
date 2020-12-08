@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <menuitem id="chiropody_menu_root"
+              name="Chiropody"
+              groups="chiropody_mgmt.group_chiropodist_doctor"
+              web_icon="chiropody_mgmt,static/description/chiropody.png"
+              sequence="14"/>
+
+    <menuitem id="chiropody_config"
+              name="Configuration"
+              parent="chiropody_menu_root"
+              groups="medical_fields.group_medical_manager"
+              sequence="18"/>
+
+</odoo>

@@ -10,9 +10,9 @@ class ResPartner(models.Model):
     foot_type = fields.Char('Foot type')
     chiropody_partner = fields.Boolean("Podiastry Partner", track_visibility='onchange')
 
-    # treatment_ids = fields.One2many('partner.treatment', 'partner_id', "Treatments")
-    # treatment_count = fields.Integer(compute='count_treatments')
-    # treatment_history_ids = fields.One2many('treatment.history', 'partner_id', "Treatment Histories")
+    chiro_treatment_ids = fields.One2many('chiropody.treatment', 'partner_id', "Chiropody treatments")
+    chiro_treatment_count = fields.Integer(compute='count_chiro_treatments')
+    # chiro_treatment_history_ids = fields.One2many('treatment.history', 'partner_id', "Treatment Histories")
 
     @api.model
     def create(self, values):
@@ -35,19 +35,19 @@ class ResPartner(models.Model):
         if res:
             values['chiropody_partner'] = True
 
-    # @api.multi
-    # def count_treatments(self):
-    #     for self in self:
-    #         if self.treatment_ids:
-    #             self.treatment_count = len(self.treatment_ids.ids)
+    @api.multi
+    def count_chiro_treatments(self):
+        for p_id in self:
+            if p_id.chiro_treatment_ids:
+                p_id.chiro_treatment_count = len(p_id.chiro_treatment_ids.ids)
 
-    # @api.multi
-    # def action_make_treatment(self):
-    #     action = self.env.ref('physiotherapy_mgmt.action_treatment_form').read()[0]
-    #     action['context'] = {'search_default_partner_id': self.id}
-    #     if len(self.treatment_ids) == 1:
-    #         action['res_id'] = self.treatment_ids.id
-    #         action['target'] = 'current'
-    #         action['view_mode'] = 'form'
-    #         del action['views']
-    #     return action
+    @api.multi
+    def action_make_chiropody_treatment(self):
+        action = self.env.ref('chiropody_mgmt.action_treatment_form').read()[0]
+        action['context'] = {'search_default_partner_id': self.id}
+        if len(self.chiro_treatment_ids) == 1:
+            action['res_id'] = self.chiro_treatment_ids.id
+            action['target'] = 'current'
+            action['view_mode'] = 'form'
+            del action['views']
+        return action

@@ -20,6 +20,18 @@ Have new fields as:
  * Foot type
 
 
+Treatments
+-----------
+Allow to make treatments to resolve chiropodist problems of your partners
+
+This treatments contains a few of sessions that can be trated separatedly
+
+
+Seassons
+--------
+
+The couple of seassons to be made on your parters to resolve his problems
+
 Credits
 =======
 

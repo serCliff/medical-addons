@@ -9,7 +9,7 @@ class PartnerTreatment(models.Model):
 
     active = fields.Boolean(default=True)
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char("Treatment", required=True)
     observations = fields.Text("Observations", help="Duration? Origins? Influences?")
 
     chiropody_session_ids = fields.One2many("chiropody.session", "treatment_id", "Sessions")
@@ -20,13 +20,13 @@ class PartnerTreatment(models.Model):
         if self.chiropody_session_ids:
             self.chiropody_sessions_count = len(self.chiropody_session_ids.ids)
 
-    # @api.multi
-    # def action_make_session(self):
-    #     action = self.env.ref('physiotherapy_mgmt.action_treatment_history_form').read()[0]
-    #     action['context'] = {'search_default_treatment_id': self.id}
-    #     if len(self.treatment_history_ids) == 1:
-    #         action['res_id'] = self.treatment_history_ids.id
-    #         action['target'] = 'current'
-    #         action['view_mode'] = 'form'
-    #         del action['views']
-    #     return action
+    @api.multi
+    def action_make_chiropody_session(self):
+        action = self.env.ref('chiropody_mgmt.action_chiropody_session_form').read()[0]
+        action['context'] = {'search_default_treatment_id': self.id}
+        if len(self.chiropody_session_ids) == 1:
+            action['res_id'] = self.chiropody_session_ids.id
+            action['target'] = 'current'
+            action['view_mode'] = 'form'
+            del action['views']
+        return action

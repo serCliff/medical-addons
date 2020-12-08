@@ -222,10 +222,9 @@
             <field name="model">partner.treatment</field>
             <field name="arch" type="xml">
                 <tree string="Treatments">
-                    <field name="name"/>
-                    <field name="partner_id"/>
                     <field name="create_date"/>
-                    <field name="company_id" groups="base.group_multi_company"/>
+                    <field name="partner_id"/>
+                    <field name="name"/>
                     <field name="observations"/>
                 </tree>
             </field>

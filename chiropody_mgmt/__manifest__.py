@@ -18,15 +18,15 @@
     'depends': [
         'sale',
         'medical_fields',
+        'base_fontawesome',
     ],
 
     'data': [
         'security/chiropody_security.xml',
-        # # 'security/ir.model.access.csv',
-        # 'views/physiotherapy_view.xml',
+        'views/chiropody_menu.xml',
         'views/res_partner.xml',
-        # 'views/treatment_history.xml',
-        # 'views/partner_treatment.xml',
+        'views/chiropody_session.xml',
+        'views/chiropody_treatment.xml',
     ],
 
 }

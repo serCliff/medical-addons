@@ -6,7 +6,7 @@ class TreatmentHistory(models.Model):
     _inherit = ['chiropody.fields']
     _description = "Each of sessions of a treatment"
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char("Session", required=True)
     observations = fields.Text("Observations", help="Duration? Origins? Influences?")
 
     treatment_id = fields.Many2one("chiropody.treatment", "Treatment")
