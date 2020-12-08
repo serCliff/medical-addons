@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+perm_access_treatment_history,treatment.history,model_treatment_history,medical_fields.group_medical_doctor,1,1,1,0
+perm_access_treatment_history_manager,treatment.history,model_treatment_history,medical_fields.group_medical_manager,1,1,1,1
+perm_access_partner_treatment,partner.treatment,model_partner_treatment,medical_fields.group_medical_doctor,1,1,1,0
+perm_access_partner_treatment_manager,partner.treatment,model_partner_treatment,medical_fields.group_medical_manager,1,1,1,1
+perm_access_treatment_movements,treatment.movements,model_treatment_movements,medical_fields.group_medical_doctor,1,1,1,0
+perm_access_treatment_movements_manager,treatment.movements,model_treatment_movements,medical_fields.group_medical_manager,1,1,1,1

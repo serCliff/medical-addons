@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+perm_access_chiropody_session,chiropody.session,model_chiropody_session,medical_fields.group_medical_doctor,1,1,1,0
+perm_access_chiropody_session_manager,chiropody.session,model_chiropody_session,medical_fields.group_medical_manager,1,1,1,1
+perm_access_chiropody_treatment,chiropody.treatment,model_chiropody_treatment,medical_fields.group_medical_doctor,1,1,1,0
+perm_access_chiropody_treatment_manager,chiropody.treatment,model_chiropody_treatment,medical_fields.group_medical_manager,1,1,1,1
