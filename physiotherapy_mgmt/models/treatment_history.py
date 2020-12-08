@@ -6,7 +6,7 @@ class TreatmentHistory(models.Model):
     _inherit = ['physiotherapy.fields']
     _description = "Each of sessions of a treatment"
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char("Session", required=True)
     treatment_id = fields.Many2one("partner.treatment", "Treatment")
 
     # CERVICAL

@@ -18,7 +18,7 @@ class PartnerTreatment(models.Model):
 
     active = fields.Boolean(default=True)
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char("Treatment", required=True)
     observations = fields.Text("Observations", help="Duration? Origins? Influences?")
 
     treatment_history_ids = fields.One2many("treatment.history", "treatment_id", "Treatment Histories")
