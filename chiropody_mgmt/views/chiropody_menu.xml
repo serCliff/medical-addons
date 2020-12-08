@@ -4,7 +4,7 @@
     <menuitem id="chiropody_menu_root"
               name="Chiropody"
               groups="chiropody_mgmt.group_chiropodist_doctor"
-              web_icon="chiropody_mgmt,static/description/chiropody.png"
+              web_icon="chiropody_mgmt,static/description/icon.png"
               sequence="14"/>
 
     <menuitem id="chiropody_config"
